@@ -1,0 +1,337 @@
+@media screen and (width<=1400px) {
+  .office-form form{
+    width: unset;
+  }
+  .mobile{
+    display: none;
+  }
+  .adminContainer {
+    overflow: auto;
+
+    .appContainer{
+      width: 100vw !important;
+    }
+  }
+
+  .dashboard {
+    .widgetContainer,
+    .graphContainer,
+    .transactionContainer {
+      justify-content: center;
+      padding: 3rem;
+      flex-wrap: wrap;
+
+      .dashboardCategories {
+        max-width: none;
+        width: 100vw;
+        .categoryItem {
+          > h5 {
+            margin-left: 250px;
+          }
+          > div {
+            margin-right: 200px;
+          }
+        }
+      }
+    }
+
+    .transactionContainer {
+      .genderChart {
+        max-width: none;
+        width: 50%;
+        margin-bottom: 5rem;
+      }
+
+      .TransactionBox {
+        margin-bottom: 20rem;
+        background-color: #414141;
+      }
+    }
+  }
+}
+
+
+@media screen and (width<=1200px) {
+ 
+  .office-form form{
+    width: 80vw;
+    overflow-x: hidden;
+
+  }
+  .modify-office-employee .office-section{
+    width: 90vw;
+    overflow-x: hidden;
+
+  }
+
+  .mobile{
+    display: none;
+  }
+
+  svg{
+    font-size: 2rem;
+  }
+.searchIcon{
+  margin-left: 100px;
+  font-size :2rem;
+
+}
+.searchText{
+  font-size: 20px !important;
+  margin-left: 100px;
+}
+
+  .AdminContainer {
+  
+    .appContainer{
+      width: 100vw !important;
+    }
+
+    overflow: auto;
+    .chartContainer{
+      width: 100vw;
+    }
+
+    >aside{
+      overflow-y: scroll;
+      ::-webkit-scrollbar{
+         display: none;
+      }
+    }
+    main{
+      width: 100vw;
+    }
+  }
+
+  main {
+    .dashboard{
+      width: 100vw;
+    }
+  }
+  .dashboard {
+     width: 100vw;
+    .widgetContainer,
+    .graphContainer,
+    .transactionContainer {
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .widgetContainer {
+        .widget {
+          width: 20rem;
+          height: 10rem;
+        }
+      }
+      .TransactionBox{
+        margin-left: 20px;
+        padding-bottom: 50px;
+      }
+
+      .dashboardCategories {
+        max-width: none;
+        width: 100vw;
+        .categoryItem {
+          > h5 {
+            margin-left: 250px;
+          }
+          > div {
+            margin-right: 200px;
+          }
+        }
+
+        .categoryItem{
+          h5{
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen and (width<=500px) {
+  h1,h2{
+    text-align: center !important;
+  }
+
+  .mobile{
+  display: block;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  font-weight: 700;
+  color: #414141;
+  background-color: aquamarine;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 100px;
+  }
+  .AdminContainer{
+    width: 100vw;
+    >aside{
+      overflow-y: scroll !important;
+    }
+    
+    .chartContainer > section .orderChart {
+      height: auto;
+    }
+
+
+
+    .appContainer{
+   >h1{
+    font-size:3rem;
+   }
+      width:100vw !important;;
+      .btnStopwatch{
+        font-size: large;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+      }
+      
+      overflow-x:hidden;
+      > section {
+
+        .couponForm > input {
+           width: 200%;
+           height: 40px;
+           font-size: 12px;
+           font-weight: 330;
+           position: relative;
+           right: 3rem;
+ 
+        }
+
+        .couponForm >fieldset {
+          width: 200%;
+          position: relative;
+           right: 7rem;
+        } 
+        .couponForm button{
+         
+          position: relative;
+           right: 3rem;
+        }
+     
+    }}
+  }
+.heading{
+  margin:40px 100px;
+}
+
+
+  .dashboard .graphContainer .dashboardCategories .categoryItem {
+    display: unset;
+
+  }
+  .dashboard .transactionContainer .genderChart {
+    height: 70vh;
+    width: 70vw;
+  }
+
+  .dashboard .transactionContainer  {
+    .TransactionBox{
+      >h2{
+        position: sticky;
+        color: teal;
+         font-size: 16px;
+         font-weight: 700;
+      }
+    }
+    
+  }
+ 
+  .dashboard .graphContainer .revenueChart {
+    // width: 100vw;
+    height: 100vh;
+    overflow-x: scroll;
+    ::-webkit-scrollbar{
+      display: hidden;
+    }
+
+    canvas{
+      
+      width: 100%;
+    }
+  }
+
+  .gotoBtn{
+    width: 200px;
+    font-size: xx-large !important;
+  }
+.madeBy{
+  width: 200px !important;
+  font-size: medium !important;
+  left:20% !important;
+  &:hover{
+    opacity: 1 !important;
+  }
+}
+  .searchText{
+    font-size: 17px !important;
+    margin-left: 0px;
+    margin-top: 5px;
+  }
+  .ProductManage {
+
+    width:100vw !important;
+    position: relative;
+   ;
+    left:10px !important;
+    margin-right: 10px !important;
+    display: flex;
+    flex-direction: column;
+    > section {
+      max-height: none;
+      height: 1500px;
+      @include flex(column);
+      > span {
+        top: 0px;
+        left: 0;
+      }
+    }
+    > article {
+      max-height: none;
+      right:80%;
+      height: 100vh !important;
+      width: 90vw !important;
+      > form {
+        max-height: none;
+        label{
+          font-size: large !important;
+        }
+        height: 100vh;
+        > div {
+          @include flex(row);
+          height: 100%;
+          > label {
+            font-size: 2rem;
+          }
+        }
+        > button {
+          font-size: 2rem;
+        }
+      }
+    }
+    >section{
+      right:80%;
+      margin-top: 100px;
+      height: 100vh !important;
+      width: 90vw !important;
+      .orderChart{
+        height: 10%;
+      }
+      > img{
+        width: 70vw;
+
+      }
+    }
+  }
+
+
+}
+
+
+
+

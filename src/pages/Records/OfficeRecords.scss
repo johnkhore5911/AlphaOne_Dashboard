@@ -1,0 +1,47 @@
+  
+  main {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+  }
+  
+  .officeRecordsContainer {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .chartSection {
+      margin-top: 20px;
+  
+      h2 {
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        color: #333;
+      }
+  
+      .chart {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+  
+        // Ensure the chart maintains aspect ratio and is responsive
+        canvas {
+          width: 100% !important;
+          height: auto !important;
+        }
+  
+        // Adjust the height for smaller screens
+        @media (max-width: 768px) {
+          height: 300px;
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,40 @@
+.chartContainer{
+    background-color: #fff;
+    padding: 2rem;
+    overflow-y: auto;
+    position: relative;
+    width: 100%; /* Make the chart container responsive */
+    height: auto;
+    >h1{
+        font-family: monospace;
+        font-size: 2rem;
+        margin:0 0 5rem 6rem;
+
+    }
+
+    >section{
+        height: 100%;
+        // margin: auto;
+        >h1{
+            font-family: cursive;
+            margin-left: 3rem;
+        }
+        .pieChart{
+         max-width:25rem;
+         margin:auto;
+         margin-bottom: -1rem;
+         
+           
+        }
+        .orderChart{
+           height:90%;
+            width: 100%;
+        }
+        >h2{
+            margin:1rem 0 2rem 0;
+            @include heading(2px);
+            text-align: center;
+
+        }
+    }
+}

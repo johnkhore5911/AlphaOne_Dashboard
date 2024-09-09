@@ -1,0 +1,58 @@
+@mixin heading($spacing:3px,$case:uppercase,$wheight:300){
+    letter-spacing: $spacing;
+    font-weight: $wheight;
+    text-transform: $case;
+}
+
+@mixin flex(
+    $dir:row,
+    $justCont:center,
+    $alignItems:center,
+    $gap:0.3rem
+){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $justCont;
+    align-items: $alignItems;
+    gap: $gap;
+}
+
+
+@mixin grid(
+    $col:1fr,
+    $gap:3rem,
+    $row:unset
+){
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows:$row;
+    gap: $gap;
+}
+
+@mixin inputStyle(
+    $w:100%,
+    $p:1rem,
+    $bgC:inherit,
+    $border:none
+){
+    width: $w;
+    padding: $p;
+    background-color: $bgC;
+    border:$border;
+    outline: none;
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+@mixin posCenter(){
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin square($s){
+    height: $s;
+    width: $s;
+}

@@ -1,0 +1,140 @@
+{
+  "categories": [
+    {
+      "value": 40,
+      "heading": "CHANDIGARH"
+    },
+
+    {
+      "value": 100,
+      "heading": "MUMBAI"
+    },
+    {
+      "value": 80,
+      "heading": "DELHI"
+    },
+    {
+      "value": 60,
+      "heading": "BHOPAL"
+    }
+  ],
+
+  "transaction": [
+    {
+      "officeid": "ksdnfkjsdfx",
+      "office": "CHANDIGARH",
+      "EmpName": "Ankush",
+      "Time": "10:10"
+    },
+    {
+      "officeid": "ksdnfkjsdfx",
+      "office": "MUMBAI",
+      "EmpName": "JOHN",
+      "Time": "9:10"
+    },
+    {
+      "officeid": "ksdnfkjsdfx",
+      "office": "DELHI",
+      "EmpName": "GAURAV",
+      "Time": "11:10"
+    },
+    {
+      "officeid": "ksdnfkjsdfx",
+      "office": "BHOPAL",
+      "EmpName": "SHUBHAM",
+      "Time": "10:50"
+    },
+    {
+      "officeid": "ksdnfkjsdfx",
+      "office": "DELHI",
+      "EmpName": "HARSHITA",
+      "Time": "9:30"
+    },
+    {
+      "officeid": "ksdnfkjsdfx",
+      "office": "MUMBAI",
+      "EmpName": "DIKSHA",
+      "Time": "11:10"
+    }
+
+
+  ],
+
+ "Dept":[
+  {
+    "deptid":"12345",
+    "Department":"SoftWare",
+    "EmpId":"12344",
+    "EmpName":"Ankush",
+    "workingHours":8
+  },
+  {
+    "deptid":"12345",
+    "Department":"SoftWare",
+    "EmpId":"12344",
+    "EmpName":"Ankush",
+    "workingHours":8
+  },
+  {
+    "deptid":"12345",
+    "Department":"SoftWare",
+    "EmpId":"12344",
+    "EmpName":"Ankush",
+    "workingHours":8
+  },
+  {
+    "deptid":"12345",
+    "Department":"SoftWare",
+    "EmpId":"12344",
+    "EmpName":"Ankush",
+    "workingHours":8
+  }
+ ],
+
+
+"emp":  [	{
+		"OfficeName":"CHANDIGARH",
+		"percents":20,
+		"employees_checkedIn":5
+	},
+
+  {
+		"OfficeName":"Delhi",
+		"percents":80,
+		"employees_checkedIn":200
+	},
+
+  {
+		"OfficeName":"Rajathan",
+		"percents":50,
+		"employees_checkedIn":180
+	},
+  {
+		"OfficeName":"Delhi",
+		"percents":50,
+		"employees_checkedIn":200
+	},
+  {
+		"OfficeName":"Delhi",
+		"percents":50,
+		"employees_checkedIn":200
+	},
+  {
+		"OfficeName":"Delhi",
+		"percents":50,
+		"employees_checkedIn":200
+	},
+  {
+		"OfficeName":"Delhi",
+		"percents":50,
+		"employees_checkedIn":200
+	},
+  {
+		"OfficeName":"Delhi",
+		"percents":50,
+		"employees_checkedIn":200
+	}
+
+]
+
+}

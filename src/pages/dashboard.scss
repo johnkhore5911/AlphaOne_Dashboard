@@ -1,0 +1,46 @@
+.main {
+    // This ensures the entire container won't have horizontal scroll
+     overflow-x: hidden;  
+     width: 90%;
+  }
+.widgetContainer {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;  // Enable horizontal scroll
+    padding-bottom: 1rem;
+    
+    // Hide scrollbar on webkit browsers
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+    
+    // Add smooth scrolling
+    scroll-behavior: smooth;
+  
+    // Ensure the container takes the available width
+    width: 100%;
+    white-space: nowrap;  // Prevent the widgets from breaking into the next line
+  }
+  
+  // Widget Styling (remains the same)
+  .widget {
+    min-width: 250px;  // Adjust min-width to control the size of widgets
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+  
+  // Ensure responsiveness on smaller screens
+  @media (max-width: 768px) {
+    .widget-container {
+      gap: 1rem;  // Reduce gap between widgets on smaller screens
+    }
+  }
+  

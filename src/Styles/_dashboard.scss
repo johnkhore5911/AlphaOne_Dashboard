@@ -1,0 +1,197 @@
+.dashboard{
+    overflow-y: auto;
+    .bar{
+        height:4rem;
+        @include flex(row,unset);
+        padding: 0 1rem;
+        border-bottom: 1px solid rgba(0,0,0,0.37);
+        >input{
+            margin-right: auto;
+            @include inputStyle(100%, 1rem 0);
+
+        }
+        >svg{
+           margin-left:50px;
+            opacity: 0.7;
+        }
+        >img{
+            @include square(2rem);
+            border-radius: 50%;
+            margin-left: 20px;
+        }
+    }
+
+    .widgetContainer{
+        @include flex(row,space-evenly,stretch,2rem);
+        padding: 2rem,2rem,2rem,0;
+        // display: flex;
+        // flex-wrap: wrap;
+          margin: 20px;
+        .widget{
+            background-color: white;
+            width:16rem;
+            padding: 2rem;
+            margin-left:10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.132);
+            // margin:10px;
+            border-radius: 10px;
+            @include flex(row,space-between,stretch,0);
+        
+            .widgetInfo{
+                >p{
+                    opacity: 0.7;
+                    font-size: 0.8rem;
+                }
+                >h4{
+                    font-size: 1.5rem;
+                   
+                }
+                >span{
+                    @include  flex(row,unset,center,0.2rem);
+                }
+            }
+
+            .widgetCircle{
+                position: relative;
+                @include square(5rem);
+                border-radius: 50%;
+                display: grid;
+                place-items: center;
+                margin-left: 2px;
+                background-color: antiquewhite;
+                &::before{
+                     content:"";
+                     position: absolute;
+                     @include square(4rem);
+                     background-color:white;
+                     border-radius: 100%;
+                }
+                span{
+                    position: relative;
+                }
+            }
+       
+        }
+    }
+
+    .graphContainer{
+        @include flex(row,unset,unset,2rem);
+        padding: 0 2rem 2rem 0;
+        >div{
+            background-color: white;
+            border-radius: 10px;
+        }
+        .revenueChart{
+            width:100%;
+            padding: 1rem 3rem;
+            >h2{
+                @include heading;
+                padding:1rem 0 2rem 0.25rem;
+                text-align:center;
+            }
+        }
+
+        .dashboardCategories{
+            width:100%;
+            max-width: 16rem;
+            @include flex(column,center,unset,0);
+            padding-bottom: 2rem;
+
+            >h2{
+                @include heading;
+                padding:1.5rem 0 2rem 0.25rem;
+                text-align:center;
+            }
+            .categoryItem{
+                width:100%;
+                @include flex(row ,space-between);
+                padding: 1rem;
+                margin:7px 0px;
+                >h5{
+                    letter-spacing: 1px;
+                    font-weight: 300;
+                }
+                >div{position: relative;
+                    background-color: rgb(217,217,217);
+                    border-radius:20px;
+                    width:6rem;
+                    flex: none;
+                    height:0.5rem;
+                    >div{
+                        height:100%;
+                        border-radius:20px;
+                        
+                    }
+                    >span{
+                          position: absolute;
+                          left:30px;
+                        font-size: 0.7rem;
+                        font-weight: 500;
+        
+                    }
+                }
+            }
+        }  
+    }
+    .transactionContainer{
+
+        display:flex;
+        gap:2rem;
+        padding: 0 2rem 2rem 0;
+        height:30rem;
+
+        >div{
+            background-color:white;
+            box-shadow: 0 10px 10px rgba(0,0,0,0.132);
+            border-radius: 10px;
+
+        }
+       
+        .genderChart{
+            width:100%;
+            max-width: 20rem;
+            padding: 1rem;
+            position: relative;
+
+            svg{
+               @include posCenter();
+               font-size: 2rem;
+            }
+
+            >h2{
+                text-align: center;
+                padding: 1.5rem 0 2rem 0;
+                @include heading;
+            }
+            >p{
+                @include posCenter;
+                font-size: 2rem;
+                color:rgba(0, 0,0,0.634)
+            }
+        }
+
+        .TransactionBox{
+           width: 100%;
+           padding: 1rem;
+           overflow-x: auto;
+           background-color: #414141;
+          
+           >h2{
+            margin: 1.5rem 0 0 0;
+            @include heading;
+            @include flex(row,center);
+            color: white;
+           }
+           table tbody td{
+            color: rgb(255, 255, 255);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        table th{
+            color: rgb(255, 255, 255);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        }
+
+    }
+}
